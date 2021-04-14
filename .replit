@@ -1,0 +1,1 @@
+run="npx sass --watch src/main.scss dist/onecss.css"
