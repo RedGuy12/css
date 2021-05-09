@@ -4,40 +4,63 @@
 RELEASED UNDER THE MIT LICENSE
 © 2021 William Horning
 !*/
+@media (prefers-color-scheme: dark) {
+  :root {
+    --textcolor: white;
+    --backgroundcolor:black;
+  }
+}
+@media (prefers-color-scheme: light) {
+  :root {
+    --textcolor: black;
+    --backgroundcolor:white;
+  }
+}
+:root {
+  --color-red:#ff0000;
+  --color-orange:#ff8400;
+  --color-yellow:#ffd500;
+  --color-green:#3cff00;
+  --color-teal:#00ffcc;
+  --color-light-blue:#009dff;
+  --color-dark-blue:#2200ff;
+  --color-purple:#8000ff;
+  --color-pink:#d400ff;
+  --accentcolor:#ff8400;
+}
+
 /* 1css font stack */
 .sansserif {
-  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .serif {
-  font-family: Iowan Old Style, Apple Garamond, Baskerville, Times New Roman, Droid Serif, Times, Source Serif Pro, serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 .monospace {
-  font-family: Menlo, Consolas, Monaco, Liberation Mono, Lucida Console, monospace;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 /* article element styling, like tailwind's prose */
 article {
+  font-size: 1em;
+}
+article h1, article h2, article h3, article h4 {
+  color: var(--accentcolor);
   font-weight: bolder;
 }
 article h1 {
-  font-size: 2em;
+  font-size: 2em !important;
 }
 article h2 {
-  font-size: 1.75em;
+  font-size: 1.75em !important;
 }
 article h3 {
-  font-size: 1.5em;
+  font-size: 1.5em !important;
 }
 article h4 {
-  font-size: 1.25em;
-}
-article h5 {
-  font-size: 1em;
-}
-article h6 {
-  font-size: 0.75em;
+  font-size: 1.25em !important;
 }
 
 /*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
@@ -173,6 +196,248 @@ progress {
 
 summary {
   display: list-item;
+}
+
+/*! end modern-normalize */
+/* margin and padding */
+.mt-5 {
+  margin-top: 5px;
+}
+
+.pt-5 {
+  padding-top: 5px;
+}
+
+.mb-5 {
+  margin-bottom: 5px;
+}
+
+.pb-5 {
+  padding-bottom: 5px;
+}
+
+.ml-5 {
+  margin-left: 5px;
+}
+
+.pl-5 {
+  padding-left: 5px;
+}
+
+.mr-5 {
+  margin-right: 5px;
+}
+
+.pr-5 {
+  padding-right: 5px;
+}
+
+.m-5 {
+  margin: 5px;
+}
+
+.p-5 {
+  padding: 5px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.pt-10 {
+  padding-top: 10px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.pb-10 {
+  padding-bottom: 10px;
+}
+
+.ml-10 {
+  margin-left: 10px;
+}
+
+.pl-10 {
+  padding-left: 10px;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.pr-10 {
+  padding-right: 10px;
+}
+
+.m-10 {
+  margin: 10px;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+.mt-15 {
+  margin-top: 15px;
+}
+
+.pt-15 {
+  padding-top: 15px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.pb-15 {
+  padding-bottom: 15px;
+}
+
+.ml-15 {
+  margin-left: 15px;
+}
+
+.pl-15 {
+  padding-left: 15px;
+}
+
+.mr-15 {
+  margin-right: 15px;
+}
+
+.pr-15 {
+  padding-right: 15px;
+}
+
+.m-15 {
+  margin: 15px;
+}
+
+.p-15 {
+  padding: 15px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.pt-20 {
+  padding-top: 20px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+
+.pl-20 {
+  padding-left: 20px;
+}
+
+.mr-20 {
+  margin-right: 20px;
+}
+
+.pr-20 {
+  padding-right: 20px;
+}
+
+.m-20 {
+  margin: 20px;
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+.mt-25 {
+  margin-top: 25px;
+}
+
+.pt-25 {
+  padding-top: 25px;
+}
+
+.mb-25 {
+  margin-bottom: 25px;
+}
+
+.pb-25 {
+  padding-bottom: 25px;
+}
+
+.ml-25 {
+  margin-left: 25px;
+}
+
+.pl-25 {
+  padding-left: 25px;
+}
+
+.mr-25 {
+  margin-right: 25px;
+}
+
+.pr-25 {
+  padding-right: 25px;
+}
+
+.m-25 {
+  margin: 25px;
+}
+
+.p-25 {
+  padding: 25px;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
+.pt-30 {
+  padding-top: 30px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.pb-30 {
+  padding-bottom: 30px;
+}
+
+.ml-30 {
+  margin-left: 30px;
+}
+
+.pl-30 {
+  padding-left: 30px;
+}
+
+.mr-30 {
+  margin-right: 30px;
+}
+
+.pr-30 {
+  padding-right: 30px;
+}
+
+.m-30 {
+  margin: 30px;
+}
+
+.p-30 {
+  padding: 30px;
 }
 
 /*# sourceMappingURL=onecss.css.map */

@@ -1,3 +1,5 @@
 @use 'copyright.scss'; // copyright text
-@use 'typography/typeography.scss'; // font stack
+@use 'root.scss'; // root colors
+@use 'typography/typeography.scss'; // typeography
 @use 'modern/modern.css'; // modern-normalize
+@use 'utils/utils.scss'; // utilities
