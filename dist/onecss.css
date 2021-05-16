@@ -5,62 +5,66 @@ RELEASED UNDER THE MIT LICENSE
 © 2021 William Horning
 !*/
 @media (prefers-color-scheme: dark) {
-  :root {
-    --textcolor: white;
-    --backgroundcolor:black;
-  }
+	:root {
+		--textcolor: white;
+		--backgroundcolor: black;
+	}
 }
 @media (prefers-color-scheme: light) {
-  :root {
-    --textcolor: black;
-    --backgroundcolor:white;
-  }
+	:root {
+		--textcolor: black;
+		--backgroundcolor: white;
+	}
 }
 :root {
-  --color-red:#ff0000;
-  --color-orange:#ff8400;
-  --color-yellow:#ffd500;
-  --color-green:#3cff00;
-  --color-teal:#00ffcc;
-  --color-light-blue:#009dff;
-  --color-dark-blue:#2200ff;
-  --color-purple:#8000ff;
-  --color-pink:#d400ff;
-  --accentcolor:#ff8400;
+	--color-red: #ff0000;
+	--color-orange: #ff8400;
+	--color-yellow: #ffd500;
+	--color-green: #3cff00;
+	--color-teal: #00ffcc;
+	--color-light-blue: #009dff;
+	--color-dark-blue: #2200ff;
+	--color-purple: #8000ff;
+	--color-pink: #d400ff;
+	--accentcolor: #ff8400;
 }
 
 /* 1css font stack */
 .sansserif {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+		Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .serif {
-  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+	font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 .monospace {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+	font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
 /* article element styling, like tailwind's prose */
 article {
-  font-size: 1em;
+	font-size: 1em;
 }
-article h1, article h2, article h3, article h4 {
-  color: var(--accentcolor);
-  font-weight: bolder;
+article h1,
+article h2,
+article h3,
+article h4 {
+	color: var(--accentcolor);
+	font-weight: bolder;
 }
 article h1 {
-  font-size: 2em !important;
+	font-size: 2em !important;
 }
 article h2 {
-  font-size: 1.75em !important;
+	font-size: 1.75em !important;
 }
 article h3 {
-  font-size: 1.5em !important;
+	font-size: 1.5em !important;
 }
 article h4 {
-  font-size: 1.25em !important;
+	font-size: 1.25em !important;
 }
 
 /*! modern-normalize v1.0.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
@@ -68,67 +72,67 @@ article h4 {
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 :root {
-  -moz-tab-size: 4;
-  tab-size: 4;
+	-moz-tab-size: 4;
+	tab-size: 4;
 }
 
 html {
-  line-height: 1.15;
-  -webkit-text-size-adjust: 100%;
+	line-height: 1.15;
+	-webkit-text-size-adjust: 100%;
 }
 
 body {
-  margin: 0;
+	margin: 0;
 }
 
 hr {
-  height: 0;
-  color: inherit;
+	height: 0;
+	color: inherit;
 }
 
 abbr[title] {
-  text-decoration: underline dotted;
+	text-decoration: underline dotted;
 }
 
 b,
 strong {
-  font-weight: bolder;
+	font-weight: bolder;
 }
 
 code,
 kbd,
 samp,
 pre {
-  font-size: 1em;
+	font-size: 1em;
 }
 
 small {
-  font-size: 80%;
+	font-size: 80%;
 }
 
 sub,
 sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline;
 }
 
 sub {
-  bottom: -0.25em;
+	bottom: -0.25em;
 }
 
 sup {
-  top: -0.5em;
+	top: -0.5em;
 }
 
 table {
-  text-indent: 0;
-  border-color: inherit;
+	text-indent: 0;
+	border-color: inherit;
 }
 
 button,
@@ -136,308 +140,308 @@ input,
 optgroup,
 select,
 textarea {
-  font-family: inherit;
-  font-size: 100%;
-  line-height: 1.15;
-  margin: 0;
+	font-family: inherit;
+	font-size: 100%;
+	line-height: 1.15;
+	margin: 0;
 }
 
 button,
 select {
-  text-transform: none;
+	text-transform: none;
 }
 
 button,
-[type=button],
-[type=reset],
-[type=submit] {
-  -webkit-appearance: button;
+[type="button"],
+[type="reset"],
+[type="submit"] {
+	-webkit-appearance: button;
 }
 
 ::-moz-focus-inner {
-  border-style: none;
-  padding: 0;
+	border-style: none;
+	padding: 0;
 }
 
 :-moz-focusring {
-  outline: 1px dotted ButtonText;
+	outline: 1px dotted ButtonText;
 }
 
 :-moz-ui-invalid {
-  box-shadow: none;
+	box-shadow: none;
 }
 
 legend {
-  padding: 0;
+	padding: 0;
 }
 
 progress {
-  vertical-align: baseline;
+	vertical-align: baseline;
 }
 
 ::-webkit-inner-spin-button,
 ::-webkit-outer-spin-button {
-  height: auto;
+	height: auto;
 }
 
-[type=search] {
-  -webkit-appearance: textfield;
-  outline-offset: -2px;
+[type="search"] {
+	-webkit-appearance: textfield;
+	outline-offset: -2px;
 }
 
 ::-webkit-search-decoration {
-  -webkit-appearance: none;
+	-webkit-appearance: none;
 }
 
 ::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  font: inherit;
+	-webkit-appearance: button;
+	font: inherit;
 }
 
 summary {
-  display: list-item;
+	display: list-item;
 }
 
 /*! end modern-normalize */
 /* margin and padding */
 .mt-5 {
-  margin-top: 5px;
+	margin-top: 5px;
 }
 
 .pt-5 {
-  padding-top: 5px;
+	padding-top: 5px;
 }
 
 .mb-5 {
-  margin-bottom: 5px;
+	margin-bottom: 5px;
 }
 
 .pb-5 {
-  padding-bottom: 5px;
+	padding-bottom: 5px;
 }
 
 .ml-5 {
-  margin-left: 5px;
+	margin-left: 5px;
 }
 
 .pl-5 {
-  padding-left: 5px;
+	padding-left: 5px;
 }
 
 .mr-5 {
-  margin-right: 5px;
+	margin-right: 5px;
 }
 
 .pr-5 {
-  padding-right: 5px;
+	padding-right: 5px;
 }
 
 .m-5 {
-  margin: 5px;
+	margin: 5px;
 }
 
 .p-5 {
-  padding: 5px;
+	padding: 5px;
 }
 
 .mt-10 {
-  margin-top: 10px;
+	margin-top: 10px;
 }
 
 .pt-10 {
-  padding-top: 10px;
+	padding-top: 10px;
 }
 
 .mb-10 {
-  margin-bottom: 10px;
+	margin-bottom: 10px;
 }
 
 .pb-10 {
-  padding-bottom: 10px;
+	padding-bottom: 10px;
 }
 
 .ml-10 {
-  margin-left: 10px;
+	margin-left: 10px;
 }
 
 .pl-10 {
-  padding-left: 10px;
+	padding-left: 10px;
 }
 
 .mr-10 {
-  margin-right: 10px;
+	margin-right: 10px;
 }
 
 .pr-10 {
-  padding-right: 10px;
+	padding-right: 10px;
 }
 
 .m-10 {
-  margin: 10px;
+	margin: 10px;
 }
 
 .p-10 {
-  padding: 10px;
+	padding: 10px;
 }
 
 .mt-15 {
-  margin-top: 15px;
+	margin-top: 15px;
 }
 
 .pt-15 {
-  padding-top: 15px;
+	padding-top: 15px;
 }
 
 .mb-15 {
-  margin-bottom: 15px;
+	margin-bottom: 15px;
 }
 
 .pb-15 {
-  padding-bottom: 15px;
+	padding-bottom: 15px;
 }
 
 .ml-15 {
-  margin-left: 15px;
+	margin-left: 15px;
 }
 
 .pl-15 {
-  padding-left: 15px;
+	padding-left: 15px;
 }
 
 .mr-15 {
-  margin-right: 15px;
+	margin-right: 15px;
 }
 
 .pr-15 {
-  padding-right: 15px;
+	padding-right: 15px;
 }
 
 .m-15 {
-  margin: 15px;
+	margin: 15px;
 }
 
 .p-15 {
-  padding: 15px;
+	padding: 15px;
 }
 
 .mt-20 {
-  margin-top: 20px;
+	margin-top: 20px;
 }
 
 .pt-20 {
-  padding-top: 20px;
+	padding-top: 20px;
 }
 
 .mb-20 {
-  margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 .pb-20 {
-  padding-bottom: 20px;
+	padding-bottom: 20px;
 }
 
 .ml-20 {
-  margin-left: 20px;
+	margin-left: 20px;
 }
 
 .pl-20 {
-  padding-left: 20px;
+	padding-left: 20px;
 }
 
 .mr-20 {
-  margin-right: 20px;
+	margin-right: 20px;
 }
 
 .pr-20 {
-  padding-right: 20px;
+	padding-right: 20px;
 }
 
 .m-20 {
-  margin: 20px;
+	margin: 20px;
 }
 
 .p-20 {
-  padding: 20px;
+	padding: 20px;
 }
 
 .mt-25 {
-  margin-top: 25px;
+	margin-top: 25px;
 }
 
 .pt-25 {
-  padding-top: 25px;
+	padding-top: 25px;
 }
 
 .mb-25 {
-  margin-bottom: 25px;
+	margin-bottom: 25px;
 }
 
 .pb-25 {
-  padding-bottom: 25px;
+	padding-bottom: 25px;
 }
 
 .ml-25 {
-  margin-left: 25px;
+	margin-left: 25px;
 }
 
 .pl-25 {
-  padding-left: 25px;
+	padding-left: 25px;
 }
 
 .mr-25 {
-  margin-right: 25px;
+	margin-right: 25px;
 }
 
 .pr-25 {
-  padding-right: 25px;
+	padding-right: 25px;
 }
 
 .m-25 {
-  margin: 25px;
+	margin: 25px;
 }
 
 .p-25 {
-  padding: 25px;
+	padding: 25px;
 }
 
 .mt-30 {
-  margin-top: 30px;
+	margin-top: 30px;
 }
 
 .pt-30 {
-  padding-top: 30px;
+	padding-top: 30px;
 }
 
 .mb-30 {
-  margin-bottom: 30px;
+	margin-bottom: 30px;
 }
 
 .pb-30 {
-  padding-bottom: 30px;
+	padding-bottom: 30px;
 }
 
 .ml-30 {
-  margin-left: 30px;
+	margin-left: 30px;
 }
 
 .pl-30 {
-  padding-left: 30px;
+	padding-left: 30px;
 }
 
 .mr-30 {
-  margin-right: 30px;
+	margin-right: 30px;
 }
 
 .pr-30 {
-  padding-right: 30px;
+	padding-right: 30px;
 }
 
 .m-30 {
-  margin: 30px;
+	margin: 30px;
 }
 
 .p-30 {
-  padding: 30px;
+	padding: 30px;
 }
 
 /*# sourceMappingURL=onecss.css.map */

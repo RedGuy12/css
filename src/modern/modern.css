@@ -68,9 +68,9 @@ select {
 	text-transform: none;
 }
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+[type="button"],
+[type="reset"],
+[type="submit"] {
 	-webkit-appearance: button;
 }
 ::-moz-focus-inner {
@@ -93,7 +93,7 @@ progress {
 ::-webkit-outer-spin-button {
 	height: auto;
 }
-[type='search'] {
+[type="search"] {
 	-webkit-appearance: textfield;
 	outline-offset: -2px;
 }
