@@ -1,8 +1,10 @@
 /* 1css font stack */
-$fonts-sansserif: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
-	Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$fonts-sansserif: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+	"Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+	"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 $fonts-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-$fonts-monospace: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$fonts-monospace: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+	"Liberation Mono", "Courier New", monospace;
 .sansserif {
 	font-family: $fonts-sansserif;
 }
