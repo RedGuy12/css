@@ -1,0 +1,64 @@
+name: Format and lint
+on:
+    workflow_dispatch:
+    push:
+        paths-ignore:
+            - package.json
+            - package-lock.json
+    pull_request:
+    pull_request_target:
+
+jobs:
+    run:
+        name: Run linters
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout
+              if: ${{ !cancelled() }}
+              uses: actions/checkout@main
+              with:
+                  ref: ${{ github.head_ref }}
+
+            - name: Setup Node.JS
+              if: ${{ !cancelled() }}
+              uses: actions/setup-node@main
+              with:
+                  node-version: 14
+                  cache: "npm"
+
+            - name: Install
+              if: ${{ !cancelled() }}
+              run: npm install -D
+
+            - name: Prettier
+              if: ${{ !cancelled() }}
+              run: npm run lint:prettier
+
+            - name: ESLint
+              if: ${{ !cancelled() }}
+              run: npm run lint:eslint
+
+            - name: Spellchecker CLI
+              if: ${{ !cancelled() }}
+              run: npn run lint:spellchecker-cli
+
+            - name: write good
+              if: ${{ !cancelled() }}
+              run: npm run lint:write_good
+
+            - name: Remove
+              if: ${{ !cancelled() }}
+              run: rm package-lock.json package.json
+
+            - name: Commit
+              if: ${{ !cancelled() }}
+              uses: stefanzweifel/git-auto-commit-action@master
+              with:
+                  commit_message: "Lint and format code"
+                  branch: ${{ github.head_ref }}
+                  add_options: "--ignore-removal"
+                  commit_options: "--signoff"
+                  commit_user_name: wgytbot
+                  commit_user_email: 83586655+wgytbot@users.noreply.github.com
+                  commit_author: wgytbot <83586655+wgytbot@users.noreply.github.com>
