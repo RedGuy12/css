@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*!
-1CSS
+OneCSS
 RELEASED UNDER THE MIT LICENSE
 © 2021 William Horning
 !*/
@@ -29,7 +29,7 @@ RELEASED UNDER THE MIT LICENSE
 	--accentcolor: #ff8400;
 }
 
-/* 1CSS font stack */
+/* OneCSS font stack */
 .sansserif {
 	font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
 		"Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
